@@ -18,7 +18,6 @@
     "navegacao1 main main main"
     "navegacao1 main main main";
     grid-gap: 20px;
-    border-radius: 10px;
     background-color: rgba(169, 169, 169, 0.60);
 }
 
@@ -31,7 +30,7 @@
 #navegacao1 ul{
     position: relative;
     width: 100%;
-    top: 100px;
+    top: 150px;
     padding: 10px;
 }
 
@@ -52,7 +51,12 @@
 }
 
 #navegacao1 ul li a:hover{
-    background-color: gray;
+    box-shadow:
+    1px 1px gray,
+    2px 2px gray,
+    3px 3px gray;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
 }
 
 
@@ -73,12 +77,14 @@
     background-color: white;
     grid-area: navegacao2;
     box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.400);
+    margin: 30px 10px 0 10px;
+    border-radius: 4px;
 }
 
 main{
     background-color: white;
     grid-area: main;
-    box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.400);
+    background-color: rgba(0, 255, 255, 0);
 }
 
 .nav2{
@@ -92,11 +98,12 @@ main{
     display: flex;
     width: 75%;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 20px;
 }
 #campobusca input{
     display: flex;
-    width: 500px;
+    width: 600px;
     align-items: center;
     justify-content: center;
     padding: 5px;
@@ -117,12 +124,17 @@ main{
     font-weight: 700;
 }
 
+#perfil a:hover{
+    border-bottom: 3.5px solid gray;
+}
+
 #sair{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 10%;
     padding: 5px;
+    border-left: 1px solid gray;
 }
 
 #sair a{
@@ -131,3 +143,38 @@ main{
     font-weight: 700;
 }
 
+#sair a:hover{
+    border-bottom: 3.5px solid gray;
+}
+
+.home{
+    margin: auto;
+}
+
+#cards{
+    display: flex;
+}
+
+#cards section{
+    background-color: white;
+    display: flex;
+    height: 200px;
+    width: 100vw;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.40);
+}
+
+#chome{
+    display: flex;
+}
+
+#chome section{
+    background-color: white;
+    display: flex;
+    height: 380px;
+    width: 100vw;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.40);
+}
