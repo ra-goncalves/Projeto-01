@@ -43,3 +43,21 @@ form.onsubmit = (e)=>{
       console.log("Sucesso")
     }
 }
+
+function cadastrar() {
+  document.querySelector(".home").style.display = "none";
+  document.querySelector(".relatorio").style.display = "none";
+  document.querySelector(".campo-cadastro").style.display = "block";
+}
+
+function home() {
+  document.querySelector(".campo-cadastro").style.display = "none";
+  document.querySelector(".relatorio").style.display = "none";
+  document.querySelector(".home").style.display = "block";
+}
+
+function relatorio(){
+  document.querySelector(".campo-cadastro").style.display = "none";
+  document.querySelector(".home").style.display = "none";
+  document.querySelector(".relatorio").style.display = "block";
+}

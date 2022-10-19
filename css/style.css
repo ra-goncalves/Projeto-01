@@ -158,11 +158,18 @@ main{
 #cards section{
     background-color: white;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 200px;
     width: 100vw;
     margin: 10px;
     border-radius: 4px;
     box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.40);
+}
+
+#cards section:hover{
+    background-color: whitesmoke;
 }
 
 #chome{
@@ -177,4 +184,108 @@ main{
     margin: 10px;
     border-radius: 4px;
     box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.40);
+    padding: 50px;
+}
+
+
+caption{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.campo-cadastro{
+    display: none;
+    background-color: white;
+    height: 600px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.40);
+}
+
+button{
+    cursor: pointer;
+}
+
+.header-cadastro{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 12px;
+}
+
+.header-cadastro h2{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#btnCadastrar{
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: darkgrey;
+}
+
+table{
+    width: 100%;
+}
+
+tbody tr td {
+    padding: 6px;
+  }
+  
+thead tr th {
+    padding: 5px;
+    text-align: start;
+  }
+
+.tabela{
+    padding: 10px;
+    width: auto;
+    overflow: auto;
+}
+
+tbody > tr:hover {
+    background-color: whitesmoke;
+}
+
+.relatorio{
+    display: none;
+    background-color: white;
+    height: 600px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.40);
+}
+
+.header-relatorios{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 12px;
+}
+
+.relatorio section{
+    padding: 10px;
+}
+
+.relatorio section h2{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.infocard1{
+    font-size: 80px;
+}
+
+.infocard2{
+    text-align: end;
+    color: gray
 }
