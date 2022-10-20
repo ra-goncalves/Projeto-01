@@ -1,4 +1,4 @@
-const form = document.querySelector("form"),
+const form = document.querySelector(".loginform"),
 campoEmail = form.querySelector(".email"),
 dadosEmail = campoEmail.querySelector("input"),
 campoSenha = form.querySelector(".senha"),
@@ -47,17 +47,39 @@ form.onsubmit = (e)=>{
 function cadastrar() {
   document.querySelector(".home").style.display = "none";
   document.querySelector(".relatorio").style.display = "none";
+  document.querySelector(".campo-cadastrar-dados").style.display = "none";
+  document.querySelector(".campo-relatorio").style.display = "none";
   document.querySelector(".campo-cadastro").style.display = "block";
 }
 
 function home() {
   document.querySelector(".campo-cadastro").style.display = "none";
   document.querySelector(".relatorio").style.display = "none";
+  document.querySelector(".campo-cadastrar-dados").style.display = "none";
+  document.querySelector(".campo-relatorio").style.display = "none";
   document.querySelector(".home").style.display = "block";
 }
 
 function relatorio(){
   document.querySelector(".campo-cadastro").style.display = "none";
   document.querySelector(".home").style.display = "none";
+  document.querySelector(".campo-cadastrar-dados").style.display = "none"; 
+  document.querySelector(".campo-relatorio").style.display = "none";
   document.querySelector(".relatorio").style.display = "block";
+}
+
+function cadastrarDados(){
+  document.querySelector(".campo-cadastro").style.display = "none";
+  document.querySelector(".home").style.display = "none";
+  document.querySelector(".relatorio").style.display = "none";
+  document.querySelector(".campo-relatorio").style.display = "none";
+  document.querySelector(".campo-cadastrar-dados").style.display = "block";
+}
+
+function listarDados(){
+  document.querySelector(".campo-cadastro").style.display = "none";
+  document.querySelector(".home").style.display = "none";
+  document.querySelector(".relatorio").style.display = "none";
+  document.querySelector(".campo-cadastrar-dados").style.display = "none";
+  document.querySelector(".campo-relatorio").style.display = "block";
 }
