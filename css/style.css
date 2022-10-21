@@ -220,7 +220,7 @@ tbody > tr:hover {
 }
 
 .campo-relatorio{
-    display: block;
+    display: none;
     background-color: white;
     height: 600px;
     margin: 10px;
@@ -401,7 +401,7 @@ button{
 }
 
 .relatorio{
-    display: block;
+    display: none;
     background-color: white;
     height: 600px;
     margin: 10px;
