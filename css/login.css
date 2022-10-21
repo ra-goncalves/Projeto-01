@@ -1,5 +1,6 @@
+/*Fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
-
+/*Parametros padrão*/
 *{
     margin: 0px;
     padding: 0px;
@@ -12,26 +13,30 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 90vh;
-    background-color: darkgrey;
+    background-color: #FFF8DA;
 }
 
 header{
     width: 150px;
     height: 150px;
     margin: auto;
-    background-color: black;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
-    box-sizing: border-box;
 }
 
+header img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+}
 
 #campo-form{
     width: 380px;
-    background: white;
+    background: #FFE096;
     text-align: center;
     border-radius: 5px;
     padding: 40px 30px 50px 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
 }
 
 #campo-form header{
@@ -50,7 +55,7 @@ form input{
     padding: 0px 50px;
     font-size: 18px;
     border-radius: 5px;
-    border: 1px solid gray;
+    border: 1px solid #D35725;
     border-bottom-width: 2px;
 }
 
@@ -59,7 +64,7 @@ form .campos.erros input{
 }
 
 form input::placeholder{
-    color: gray;
+    color: #D35725;
     font-size: 17px;
 }
 
@@ -71,6 +76,8 @@ form .campos{
 form .campos.shake{
     animation: shake 0.3s ease-in-out;
 }
+
+/*Efeito shake*/
 
 @keyframes shake {
     0%, 100%{
@@ -98,7 +105,7 @@ form .campos span{
 
 form .campos .icone{
     left: 15px;
-    color: gray;
+    color: #D35725;
 }
 
 form .campos .icone-erro{
@@ -123,13 +130,13 @@ form .campos.erros .erros{
 form input[type="submit"]{
     margin-top: 30px;
     border: none;
-    color: black;
+    color: #FFF8DA;
     cursor: pointer;
-    background-color: darkgray;
+    background-color: #FDB813;
     font-weight: 700;
 }
 
 form input[type="submit"]:hover{
-    background-color: gray;
-    color: white;
+    background-color: #FFD160;
+    color: #D35725;
 }

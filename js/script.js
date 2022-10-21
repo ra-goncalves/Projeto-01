@@ -4,6 +4,7 @@ dadosEmail = campoEmail.querySelector("input"),
 campoSenha = form.querySelector(".senha"),
 dadosSenha = campoSenha.querySelector("input");
 
+/* Vericar email e senha */
 form.onsubmit = (e)=>{
   e.preventDefault();
   
@@ -44,6 +45,31 @@ form.onsubmit = (e)=>{
     }
 }
 
+/*Tela padrão do site */
+function home() {
+  document.querySelector(".campo-cadastro").style.display = "none";
+  document.querySelector(".relatorio").style.display = "none";
+  document.querySelector(".campo-cadastrar-dados").style.display = "none";
+  document.querySelector(".campo-relatorio").style.display = "none";
+  document.querySelector(".home").style.display = "block";
+}
+/*Tela princial de relatorio*/
+function relatorio(){
+  document.querySelector(".campo-cadastro").style.display = "none";
+  document.querySelector(".home").style.display = "none";
+  document.querySelector(".campo-cadastrar-dados").style.display = "none"; 
+  document.querySelector(".campo-relatorio").style.display = "none";
+  document.querySelector(".relatorio").style.display = "block";
+}
+/* Tela princial de cadastro */
+function cadastrarDados(){
+  document.querySelector(".campo-cadastro").style.display = "none";
+  document.querySelector(".home").style.display = "none";
+  document.querySelector(".relatorio").style.display = "none";
+  document.querySelector(".campo-relatorio").style.display = "none";
+  document.querySelector(".campo-cadastrar-dados").style.display = "block";
+}
+/* Campo de cadastro */
 function cadastrar() {
   document.querySelector(".home").style.display = "none";
   document.querySelector(".relatorio").style.display = "none";
@@ -52,34 +78,24 @@ function cadastrar() {
   document.querySelector(".campo-cadastro").style.display = "block";
 }
 
-function home() {
-  document.querySelector(".campo-cadastro").style.display = "none";
-  document.querySelector(".relatorio").style.display = "none";
-  document.querySelector(".campo-cadastrar-dados").style.display = "none";
-  document.querySelector(".campo-relatorio").style.display = "none";
-  document.querySelector(".home").style.display = "block";
-}
-
-function relatorio(){
-  document.querySelector(".campo-cadastro").style.display = "none";
-  document.querySelector(".home").style.display = "none";
-  document.querySelector(".campo-cadastrar-dados").style.display = "none"; 
-  document.querySelector(".campo-relatorio").style.display = "none";
-  document.querySelector(".relatorio").style.display = "block";
-}
-
-function cadastrarDados(){
-  document.querySelector(".campo-cadastro").style.display = "none";
-  document.querySelector(".home").style.display = "none";
-  document.querySelector(".relatorio").style.display = "none";
-  document.querySelector(".campo-relatorio").style.display = "none";
-  document.querySelector(".campo-cadastrar-dados").style.display = "block";
-}
-
+/* Campo de impressão */
 function listarDados(){
   document.querySelector(".campo-cadastro").style.display = "none";
   document.querySelector(".home").style.display = "none";
   document.querySelector(".relatorio").style.display = "none";
   document.querySelector(".campo-cadastrar-dados").style.display = "none";
   document.querySelector(".campo-relatorio").style.display = "block";
+}
+
+/* Vericar se o campo "Nome" foi preenchido do Campo de cadastro*/
+function verificarCampos(e){
+  const nomeInput = document.querySelector("#iNome").value;
+
+  if(nomeInput === ''){
+    alert("O campo nome não pode estar vazio");
+    e.preventDefault;
+  }else{
+    alert("Cadastro efetuado");
+    e.preventDefault;
+  }
 }

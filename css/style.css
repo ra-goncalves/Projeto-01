@@ -1,12 +1,13 @@
+/*Fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
-
+/*Parametros padrão*/
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
 }
-
+/*Devisão dos conteudos (GRID)*/
 .container{
     display: grid;
     height: 100%;
@@ -18,11 +19,29 @@
     "navegacao1 main main main"
     "navegacao1 main main main";
     grid-gap: 20px;
-    background-color: rgba(169, 169, 169, 0.60);
+    background-color: #FFF8DA;
 }
 
+.container header{
+    padding-top: 20px;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/*Menu principal*/
+
 #navegacao1{
-    background-color: white;
+    background-color: #FFD160;
     grid-area: navegacao1;
     box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.40);
 }
@@ -30,7 +49,7 @@
 #navegacao1 ul{
     position: relative;
     width: 100%;
-    top: 150px;
+    top: 80px;
     padding: 10px;
 }
 
@@ -45,26 +64,25 @@
     position: relative;
     display: flex;
     text-decoration: none;
-    color: black;
+    color: #D35725;
     width: 100%;
     font-weight: 700;
 }
 
 #navegacao1 ul li a:hover{
     box-shadow:
-    1px 1px gray,
-    2px 2px gray,
-    3px 3px gray;
+    1px 1px #FDB813,
+    2px 2px #FDB813,
+    3px 3px #FDB813;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }
-
 
 .material-symbols-outlined{
     position: relative;
     display: block;
     text-align: center;
-    color: rgba(0, 0, 0, 0.700);
+    color: #D35725;
 }
 
 .menu{
@@ -73,8 +91,9 @@
     padding-left: 10px;
 }
 
+/*Campo de busca / usuario / sair*/
 #navegacao2{
-    background-color: white;
+    background-color: #FFD160;
     grid-area: navegacao2;
     box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.400);
     margin: 30px 10px 0 10px;
@@ -82,13 +101,14 @@
 }
 
 main{
-    background-color: white;
+    background-color: #FFD160;
     grid-area: main;
     background-color: rgba(0, 255, 255, 0);
     height: 100%;
 }
 
 .nav2{
+    background-color: #FFD160;
     display: flex;
     height: 80px;
     align-items: center;
@@ -102,14 +122,21 @@ main{
     justify-content: flex-start;
     padding-left: 20px;
 }
+
 #campobusca input{
+    background-color: #FFF8DA;
+    border: 2px solid #D35725;
     display: flex;
     width: 600px;
     align-items: center;
     justify-content: center;
     padding: 5px;
+    border-radius: 5px;
 }
 
+#campobusca input:focus{
+    outline-color: #D35725;
+}
 
 #perfil{
     display: flex;
@@ -120,13 +147,13 @@ main{
 }
 
 #perfil a{
-    color: black;
+    color: #D35725;
     text-decoration: none;
     font-weight: 700;
 }
 
 #perfil a:hover{
-    border-bottom: 3.5px solid gray;
+    border-bottom: 3.5px solid #FDB813;
 }
 
 #sair{
@@ -135,19 +162,20 @@ main{
     justify-content: center;
     width: 10%;
     padding: 5px;
-    border-left: 1px solid gray;
+    border-left: 2px solid #D35725;
 }
 
 #sair a{
-    color: black;
+    color: #D35725;
     text-decoration: none;
     font-weight: 700;
 }
 
 #sair a:hover{
-    border-bottom: 3.5px solid gray;
+    border-bottom: 3.5px solid #FDB813;
 }
 
+/*Tela principal HOME/DASHBOARD*/
 .home{
     height: 100%;
     margin: auto;
@@ -158,7 +186,7 @@ main{
 }
 
 #cards section{
-    background-color: white;
+    background-color: #FFD160;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,7 +199,7 @@ main{
 }
 
 #cards section:hover{
-    background-color: whitesmoke;
+    background-color: #FDB813;
 }
 
 #chome{
@@ -179,7 +207,7 @@ main{
 }
 
 #chome section{
-    background-color: white;
+    background-color: #FFD160;
     display: flex;
     height: 380px;
     width: 100vw;
@@ -189,11 +217,21 @@ main{
     padding: 50px;
 }
 
+.infocard1{
+    font-size: 80px;
+    color: #D35725
+}
+
+.infocard2{
+    text-align: end;
+    color: #D35725
+}
+
 caption{
     text-align: left;
     font-size: 20px;
     margin-bottom: 10px;
-    color: gray;
+    color: #D35725;
 }
 
 table{
@@ -201,13 +239,15 @@ table{
 }
 
 tbody tr td {
+    color: #D35725;
     padding: 6px;
   }
   
 thead tr th {
+    color: #D35725;
     padding: 5px;
     text-align: start;
-  }
+}
 
 .tabela{
     padding: 10px;
@@ -216,12 +256,14 @@ thead tr th {
 }
 
 tbody > tr:hover {
-    background-color: whitesmoke;
+    background-color: #FDB813;
 }
+
+/*Campo relatorio*/
 
 .campo-relatorio{
     display: none;
-    background-color: white;
+    background-color: #FFD160;
     height: 600px;
     margin: 10px;
     border-radius: 5px;
@@ -237,13 +279,16 @@ tbody > tr:hover {
 }
 
 .header-relatorio h2{
+    color: #D35725;
     font-weight: 700;
     font-size: 20px;
 }
 
+/*Tela de cadastro*/
+
 .campo-cadastro{
     display: none;
-    background-color: white;
+    background-color: #FFD160;
     height: 600px;
     margin: 10px;
     border-radius: 5px;
@@ -263,6 +308,7 @@ button{
 }
 
 .header-cadastro h2{
+    color: #D35725;
     font-weight: 700;
     font-size: 20px;
 }
@@ -272,13 +318,15 @@ button{
     padding: 8px;
     border-radius: 5px;
     border: none;
-    color: white;
-    background-color: darkgrey;
+    color: #FFD160;
+    background-color: #D35725;
 }
+
+/*Campo de cadastro*/
 
 .campo-cadastrar-dados{
     display: none;
-    background-color: white;
+    background-color: #FFD160;
     align-items: center;
     padding: 5px;
     height: 600px;
@@ -288,6 +336,7 @@ button{
 }
 
 .cadastrar-dados{
+    color: #D35725;
     display: grid;
     height: 100%;
     width: 100%;
@@ -315,15 +364,16 @@ button{
     width: 100%;
     align-items: center;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #D35725;
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
     padding: 5px;
 }
+
 .campo-form input[type=text]:focus {
-    border: 1px solid #555;
+    border: 1px solid #D35725;
 }
 
 .campo-form label{
@@ -343,16 +393,17 @@ button{
     transition: 0.5s;
     outline: none;
     resize: none;
+    border: 1px solid #D35725;
 }
 
 .cadastrar-dados h3{
-    background-image: linear-gradient(to right, whitesmoke, white);
+    background-image: #FFD160;
 }
 
 #btnCadastrarDados{
+    align-items: center;
     width: 200px;
     grid-area: btnCadastrarDados;
-    
 }
 
 #cNome{
@@ -362,25 +413,36 @@ button{
 #cIdade{
     grid-area: cIdade;
 }
+
+#cIdade input{
+    color: #D35725;
+    display: flex;
+    text-align: center;
+    height: 30px;
+}
+
 #cEmail{
     grid-area: cEmail;
 }
 #cEndereco{
     grid-area: cEndereco;
 }
+
 #cOutrasInfo{
     grid-area: cOutrasInfo;
 }
+
 #cInteresses{
     grid-area: cInteresses;
 }
+
 #cSentimentos{
     grid-area: cSentimentos;
 }
+
 #cValores{
     grid-area: cValores;
 }
-
 
 #btnCadastrarDados{
     margin: auto;
@@ -388,8 +450,8 @@ button{
     padding: 8px;
     border-radius: 5px;
     border: none;
-    color: white;
-    background-color: darkgrey;
+    color: #FFD160;
+    background-color: #D35725;
 }
 
 .header-cadastro-dados{
@@ -400,9 +462,11 @@ button{
     margin: auto 12px;
 }
 
+/*Tela de relatorio*/
+
 .relatorio{
     display: none;
-    background-color: white;
+    background-color: #FFD160;
     height: 600px;
     margin: 10px;
     border-radius: 5px;
@@ -411,8 +475,9 @@ button{
 
 .relatorio a{
     text-decoration: none;
-    color: black;
+    color: #D35725;
 }
+
 .header-relatorios{
     min-height: 70px;
     display: flex;
@@ -422,19 +487,12 @@ button{
 }
 
 .header-relatorios h2{
+    color: #D35725;
     font-weight: 700;
     font-size: 20px;
 }
 
-.infocard1{
-    font-size: 80px;
-}
-
-.infocard2{
-    text-align: end;
-    color: gray
-}
-
+/*Responsividade*/
 @media only screen and (max-width: 675px) {
     .container{
         display: grid;
@@ -448,7 +506,6 @@ button{
         "main"
         "main";
         grid-gap: 20px;
-        background-color: rgba(169, 169, 169, 0.60);
     }
 
     main section{
@@ -519,9 +576,13 @@ button{
     *{
         flex-direction: column;
     }
+
+    #sair{
+        border-left: none;
+    }
     
 }
-
+/*Padrão de impressão*/
 @media print {
     #navegacao1,
     #navegacao2,
